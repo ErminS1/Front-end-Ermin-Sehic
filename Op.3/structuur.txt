@@ -1,0 +1,41 @@
+De front-end zal responsive zijn voor de volgende devices, browser versies en resoluties:
+
+Devices:
+
+Smartphones
+Tablets
+Laptops
+Desktops
+Browser Versies:
+
+Chrome (versie 80 en hoger)
+Firefox (versie 75 en hoger)
+Safari (versie 12 en hoger)
+Edge (versie 80 en hoger)
+Resoluties:
+
+Smartphones: 320px - 480px
+Tablets: 481px - 768px
+Laptops: 769px - 1024px
+Desktops: 1025px en hoger
+
+Adviesrapport voor Verdere Verbetering van Vindbaarheid
+Aanbevolen Optimalisaties
+
+Content Strategie
+
+Publiceer regelmatig nieuwe en waardevolle inhoud die relevant is voor je doelgroep.
+Gebruik zoekwoordenonderzoek om te bepalen welke termen je doelgroep gebruikt en deze zoekwoorden op te nemen in je inhoud.
+Backlinks Verzamelen
+
+Werk aan het verkrijgen van kwalitatieve backlinks van relevante en autoritaire websites.
+Overweeg gastblogs te schrijven of samen te werken met andere websites in jouw vakgebied.
+Mobiele Optimalisatie
+
+Zorg ervoor dat je website volledig responsive is en goed werkt op mobiele apparaten. Google geeft de voorkeur aan mobielvriendelijke sites bij het rangschikken.
+Pagina Snelheid
+
+Verbeter de laadtijd van je website door afbeeldingen te optimaliseren, gebruik te maken van caching, en onnodige scripts te minimaliseren.
+Sociale Media Integratie
+
+Verbind je website met je sociale media accounts om verkeer te genereren en je online aanwezigheid te vergroten.

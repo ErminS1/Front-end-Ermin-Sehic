@@ -1,0 +1,245 @@
+$primary-color: #2c3e50;
+$secondary-color: #34495e;
+$background-color: #ecf0f1;
+$font-color: #2c3e50;
+$link-color: #2980b9;
+$link-hover-color: darken($link-color, 10%);
+$border-radius: 8px;
+$box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+$input-background: #fff;
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background: $background-color;
+    color: $font-color;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+header {
+    background: $primary-color;
+    color: $background-color;
+    padding: 1rem 0;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    h1 {
+        margin: 0;
+    }
+
+    nav {
+        position: relative;
+
+        ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+
+            li {
+                margin: 0 1rem;
+
+                a {
+                    color: $background-color;
+                    text-decoration: none;
+                    font-weight: bold;
+                    transition: color 0.3s;
+
+                    &:hover {
+                        color: $link-hover-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+main {
+    padding: 2rem 0;
+
+    .contact-form-section {
+        background: linear-gradient(to right, #6a82fb, #fc5c7d);
+        border-radius: $border-radius;
+        box-shadow: $box-shadow;
+        padding: 2rem;
+        margin: 2rem 0;
+        color: #fff;
+
+        h2 {
+            border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 2rem;
+        }
+
+        .contact-form {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 2rem;
+            border-radius: $border-radius;
+
+            .form-group {
+                margin-bottom: 1.5rem;
+
+                label {
+                    display: block;
+                    font-weight: bold;
+                    margin-bottom: 0.5rem;
+                    color: #fff;
+                }
+
+                input,
+                textarea {
+                    width: 100%;
+                    padding: 0.75rem;
+                    border: none;
+                    border-radius: $border-radius;
+                    background: rgba(255, 255, 255, 0.9);
+                    box-shadow: $box-shadow;
+                    transition: box-shadow 0.3s;
+
+                    &:focus {
+                        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+                    }
+                }
+
+                textarea {
+                    resize: vertical;
+                    height: 150px;
+                }
+            }
+
+            .btn {
+                display: inline-block;
+                padding: 0.75rem 1.5rem;
+                background: #fff;
+                color: $primary-color;
+                text-decoration: none;
+                border-radius: $border-radius;
+                transition: background 0.3s, color 0.3s;
+                border: none;
+                cursor: pointer;
+                font-weight: bold;
+
+                &:hover {
+                    background: $link-hover-color;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    background: $secondary-color;
+    color: $background-color;
+    text-align: center;
+    padding: 2rem 0;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        label {
+            margin: 0.5rem 0 0.2rem 0;
+        }
+
+        input, textarea {
+            padding: 0.5rem;
+            width: 80%;
+            margin-bottom: 1rem;
+            border: 1px solid $primary-color;
+            border-radius: $border-radius;
+        }
+
+        button {
+            padding: 0.5rem 2rem;
+            border: none;
+            background: $primary-color;
+            color: $background-color;
+            cursor: pointer;
+            border-radius: $border-radius;
+            font-weight: bold;
+            transition: background 0.3s;
+
+            &:hover {
+                background: $link-hover-color;
+            }
+        }
+    }
+
+    #links ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+            margin: 0.5rem 0;
+
+            a {
+                color: $background-color;
+                text-decoration: none;
+                font-weight: bold;
+                transition: color 0.3s;
+
+                &:hover {
+                    color: $link-hover-color;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: $primary-color;
+
+        li {
+            margin: 0;
+
+            a {
+                padding: 1rem;
+                display: block;
+                text-align: center;
+            }
+        }
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+
+        .bar {
+            width: 25px;
+            height: 3px;
+            background-color: $background-color;
+            margin: 4px 0;
+            transition: 0.4s;
+        }
+    }
+}
